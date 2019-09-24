@@ -10,7 +10,7 @@ pipeline {
         }
         stage('parallel check') {
           steps {
-            archiveArtifacts 'my-app.zip'
+            archiveArtifacts 'appmap-master'
           }
         }
       }
