@@ -13,6 +13,11 @@ pipeline {
             echo 'I am here'
           }
         }
+        stage('dir') {
+          steps {
+            sh 'dir'
+          }
+        }
       }
     }
   }
