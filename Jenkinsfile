@@ -10,7 +10,7 @@ pipeline {
         }
         stage('parallel check') {
           steps {
-            archiveArtifacts 'target/*.jar'
+            echo 'I am here'
           }
         }
       }
