@@ -15,7 +15,7 @@ pipeline {
         }
         stage('dir') {
           steps {
-            sh 'dir'
+            echo "${ env.GIT_COMMIT.substring(0,6) }"
           }
         }
       }
