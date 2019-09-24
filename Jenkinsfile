@@ -10,7 +10,7 @@ pipeline {
         }
         stage('parallel check') {
           steps {
-            archiveArtifacts 'appmap-master'
+            archiveArtifacts 'target/*.jar'
           }
         }
       }
